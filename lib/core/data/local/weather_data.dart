@@ -6,7 +6,7 @@ import 'package:weather/core/models/weather_model.dart';
 class WeatherData {
   static final WeatherModel weatherData = WeatherModel(
     location: 'Ankara',
-    date: '2021-09-01',
+    date: '2024-01-01',
     weatherCondition: 'Sunny',
     currentTemperature: 25,
     currentWeatherDescription: 'Sunny',
