@@ -17,7 +17,6 @@ class WeatherView extends StatefulWidget {
 }
 
 class _WeatherViewState extends State<WeatherView> {
-  PageController _pageController = PageController();
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +30,7 @@ class _WeatherViewState extends State<WeatherView> {
         body: BaseBody(
           gradientBackground: true,
           child: SingleChildScrollView(
-            physics: const BouncingScrollPhysics(),
+
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -68,8 +67,8 @@ class _BuildWeatherByHour extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       constraints: BoxConstraints(
-        minHeight: context.height * 0.10,
-        maxHeight: context.height * 0.12,
+        minHeight: context.height * 0.14,
+        maxHeight: context.height * 0.15,
       ),
       child: ListView.builder(
         shrinkWrap: true,
